@@ -3,5 +3,5 @@ for(SPIscale in c(3,6,12,18,24)) {
     plot(spi(Prcp, scale = SPIscale)$fitted,type = "h",
          lend = "butt",
          xlab = "", ylab = "", xaxs = "i", lwd = 2)
-    legend("topright", paste0("SPI (",SPIscale," months)"))
+    legend("topright", paste0("SPI (",SPIscale," months)"), bg = "white")
 }
