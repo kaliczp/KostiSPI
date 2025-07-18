@@ -10,3 +10,4 @@ Prcp <- ts(ProjectSPI$Prcp, start = 2002, frequency = 12)
 plot(Prcp)
 spi3 <- spi(Prcp, 3)
 spi3
+plot(spi3) # plot SPI values
