@@ -4,6 +4,7 @@ for(SPIscale in c(3,6,12,18,24)) {
     spits <- currentspi$fitted
     plot(spits, type = "n",
          xlab = "", ylab = "", xaxs = "i")
+    grid()
     lines(as.vector(time(spits)), as.vector(spits), type = "h", lwd = 2, lend = "butt")
     legend("topright", paste0("SPI (",SPIscale," months)"), bg = "white")
 }
